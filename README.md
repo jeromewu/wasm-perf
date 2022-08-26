@@ -20,7 +20,7 @@ We benchmark the performance by measuring time to complete 10,000 times of two
 
 ## Performance
 
-Environment:
+**Environment**:
 
 - Hardware
   - CPU: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
@@ -41,7 +41,7 @@ Here we use mul_mats.js as baseline to compare the speed / time.
 | mul_mats_intrin-wasm-simd.js | -msimd128 | 4.718s (-18%) |
 | mul_mats-wasm-O3.js | -O3 | 2.012s (-65%) |
 | mul_mats-wasm-O3-simd.js | -O3 -msimd128 | 0.278s (-97%) |
-| mul_mats_intrin-wasm-simd-O3.js | -O3 -msimd128 | 0.062s (-99%) |
+| **mul_mats_intrin-wasm-simd-O3.js** | **-O3 -msimd128** | **0.062s (-99%)** |
 | mul_mats (gcc) | | 7.697s (+33%) |
 | mul_mats-O3 (gcc) | -O3 | 0.401s (-93%) |
 
@@ -64,5 +64,5 @@ To run all of them, simply hit:
 make run-all
 ```
 
-> Some of the execution might failed you are NOT using linux system, check
+> Some of the execution might failed you are NOT using Linux, check
 > [Makefile](./Makefile) to see how to run a specific case.
