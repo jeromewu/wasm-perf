@@ -1,9 +1,9 @@
-const mulArrays = (out, int_a, int_b, n) => {
+const mulMats = (out, in_a, in_b, n) => {
 	for (let i = 0; i < n; i++) {
 		for (let j = 0; j < n; j++) {
 			out.arr[i*n+j] = 0;
 			for (let k = 0; k < n; k++) {
-				out.arr[i*n+j] += int_a.arr[i*n+k] * int_b.arr[j*n+k];
+				out.arr[i*n+j] += in_a.arr[i*n+k] * in_b.arr[j*n+k];
 			}
 		}
 	}
@@ -27,6 +27,6 @@ for (let i = 0; i < n; i++) {
 
 console.time("multiply matrixs");
 for (let i = 0; i < it; i++) {
-	mulArrays(out, in_a, in_b, n);
+	mulMats(out, in_a, in_b, n);
 }
 console.timeEnd("multiply matrixs");
