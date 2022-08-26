@@ -46,7 +46,7 @@ Here we use mul_mats.js as baseline to compare the speed / time.
 | mul_mats-O3 (native) | -O3 | 0.401s (-93%) |
 
 Use SIMD intrinsics with `-O3` and `-msimd128` flags can be **99%** faster than pure
-JavaScript implementation.
+JavaScript implementation. :tada:
 
 ## Try it
 
@@ -58,7 +58,7 @@ make
 
 You should find all binaries in `dist/` folder.
 
-To run all of them, simply use:
+To run all of them, simply hit:
 
 ```bash
 make run-all
