@@ -2,6 +2,8 @@
 
 Explore how to achieve maximum performance in WebAssembly.
 
+Full post: [https://jeromewu.github.io/improving-performance-using-webassembly-simd-intrinsics/](https://jeromewu.github.io/improving-performance-using-webassembly-simd-intrinsics/)
+
 ## Setup
 
 We benchmark the performance by measuring time to complete 10,000 times of two
