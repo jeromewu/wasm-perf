@@ -15,7 +15,7 @@ run-wasm-simd:
 	node dist/mul_mats-wasm-simd.js
 
 run-wasm-simd-intrin:
-	node dist/mul_mats-wasm-simd-intrin.js
+	node dist/mul_mats_intrin-wasm-simd.js
 
 run-wasm-O3:
 	node dist/mul_mats-wasm-O3.js
@@ -24,7 +24,7 @@ run-wasm-O3-simd:
 	node dist/mul_mats-wasm-O3-simd.js
 
 run-wasm-O3-simd-intrin:
-	node dist/mul_mats-wasm-O3-simd-intrin.js
+	node dist/mul_mats_intrin-wasm-O3-simd.js
 
 run-c:
 	./dist/mul_mats

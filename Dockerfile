@@ -3,10 +3,10 @@ COPY *.c /src
 RUN mkdir -p /src/dist
 RUN emcc -o dist/mul_mats-wasm.js mul_mats.c
 RUN emcc -o dist/mul_mats-wasm-simd.js -msimd128 mul_mats.c
-RUN emcc -o dist/mul_mats-wasm-simd-intrin.js -msimd128 mul_mats_intrin.c
+RUN emcc -o dist/mul_mats_intrin-wasm-simd.js -msimd128 mul_mats_intrin.c
 RUN emcc -o dist/mul_mats-wasm-O3.js -O3 mul_mats.c
 RUN emcc -o dist/mul_mats-wasm-O3-simd.js -O3 -msimd128 mul_mats.c
-RUN emcc -o dist/mul_mats-wasm-O3-simd-intrin.js -O3 -msimd128 mul_mats_intrin.c
+RUN emcc -o dist/mul_mats_intrin-wasm-O3-simd.js -O3 -msimd128 mul_mats_intrin.c
 
 FROM gcc:12.2.0 AS native-builder
 RUN mkdir -p /src/dist
