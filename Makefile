@@ -3,7 +3,7 @@ all: build
 build:
 	docker buildx build -o . .
 
-run-all: run-js run-wasm run-wasm-simd run-wasm-simd-intrin run-wasm-O3 run-wasm-O3-simd run-wasm-O3-simd-intrin run-c run-c-O3
+run-all: run-js run-wasm run-wasm-simd run-wasm-simd-intrin run-wasm-O3 run-wasm-O3-simd run-wasm-O3-simd-intrin run-c run-c-O3 run-c-O3-avx
 
 run-js:
 	node mul_mats.js
