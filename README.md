@@ -46,6 +46,7 @@ Here we use mul_mats.js as baseline to compare the speed / time.
 | **mul_mats_intrin-wasm-simd-O3.js** | **-O3 -msimd128** | **0.062s (-99%)** |
 | mul_mats (gcc) | | 7.697s (+33%) |
 | mul_mats-O3 (gcc) | -O3 | 0.401s (-93%) |
+| mul_mats-O3-avx (gcc) | -O3 -mavx2 | 0.119s (-98%) |
 
 Use SIMD intrinsics with `-O3` and `-msimd128` flags can be **99%** faster than pure
 JavaScript implementation. :tada:

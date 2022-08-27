@@ -14,6 +14,7 @@ COPY *.c /src
 WORKDIR /src
 RUN gcc -o dist/mul_mats mul_mats.c
 RUN gcc -o dist/mul_mats-O3 -O3 mul_mats.c
+RUN gcc -o dist/mul_mats-O3-avx -O3 -mavx2 mul_mats.c
 
 FROM scratch AS exportor
 COPY --from=wasm-builder /src/dist /dist

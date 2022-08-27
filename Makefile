@@ -31,3 +31,6 @@ run-c:
 
 run-c-O3:
 	./dist/mul_mats-O3
+
+run-c-O3-avx:
+	./dist/mul_mats-O3-avx
